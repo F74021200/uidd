@@ -1,7 +1,10 @@
 <html>
 <head>
-	<link href="index.css" rel="stylesheet">
-	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<link href="index.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
 </head>
 <body>
 <div class = "the_first_block">
@@ -11,16 +14,66 @@
 	
 </div>
 <div class = "yellow_block"></div>
-<div class = "orange_block">關於南興</div>
+<div class = "orange_block" id="demo_1">關於南興</div>
 <div class = "yellow_block"></div>
-<img src="received_862657087213478.jpeg">
-<div class = "orange_block">市場導覽</div>
+<img class = "home_image" src="received_862657087213478.jpeg">
+<div class = "orange_block" id="demo_2">市場導覽</div>
 <div class = "yellow_block"></div>
-<div class = "orange_block">地圖資訊</div>
+<div class = "orange_block" id="demo_3">地圖資訊</div>
 <div class = "yellow_block"></div>
-<div class = "orange_block">近期活動</div>
+<div class = "orange_block" id="demo_4">近期活動</div>
 <div class = "last_yellow_block"></div>
-	
+
+
+
+<script>
+
+document.getElementById("demo_1").onmouseover = function() {mouseOver_1()};
+document.getElementById("demo_1").onmouseout = function() {mouseOut_1()};
+document.getElementById("demo_2").onmouseover = function() {mouseOver_2()};
+document.getElementById("demo_2").onmouseout = function() {mouseOut_2()};
+document.getElementById("demo_3").onmouseover = function() {mouseOver_3()};
+document.getElementById("demo_3").onmouseout = function() {mouseOut_3()};
+document.getElementById("demo_4").onmouseover = function() {mouseOver_4()};
+document.getElementById("demo_4").onmouseout = function() {mouseOut_4()};
+
+function mouseOver_1() {
+	$("#demo_1").animate({borderSpacing:"5px"});
+}
+
+function mouseOut_1() {
+	$("#demo_1").animate({width:"200px"});
+	$("#demo_1").animate({height:"40px"});
+}
+function mouseOver_2() {
+	$("#demo_2").animate({width:"215px"});
+	$("#demo_2").animate({height:"45px"});
+}
+
+function mouseOut_2() {
+	$("#demo_2").animate({width:"200px"});
+	$("#demo_2").animate({height:"40px"});
+}
+function mouseOver_3() {
+	$("#demo_3").animate({width:"215px"});
+	$("#demo_3").animate({height:"45px"});
+}
+
+function mouseOut_3() {
+	$("#demo_3").animate({width:"200px"});
+	$("#demo_3").animate({height:"40px"});
+}
+function mouseOver_4() {
+	$("#demo_4").animate({width:"215px"});
+	$("#demo_4").animate({height:"45px"});
+}
+
+function mouseOut_4() {
+	$("demo_4").animate({width:"200px"});
+	$("demo_4").animate({height:"40px"});
+}
+
+</script>
 </body>
 
 </html>
