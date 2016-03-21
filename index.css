@@ -9,6 +9,7 @@
 	background-color:rgb(255, 219, 0);
 	height:100px;
 	width:200px;
+	z-index:-1;
 }
 .orange_block {
 	color:white;
@@ -28,6 +29,7 @@
 	background-color:rgb(255, 219, 0);
 	height:130px;
 	width:200px;
+	z-index:-1;
 }
 .hr_line_1 {
 	display:inline-block;
@@ -62,4 +64,23 @@
 	top:180px;
 	left:250px;
 }
+.status {
+	width:8px;
+	height:8px;
+	border: 3px solid #a1a1a1;
+	background:#dddddd;
+	border-radius:100%;
+	position:absolute;
+	top:718px;
+	left:600px;
+}
+.status.a:hover {
+	cursor:pointer;
+	width:8px;
+	height:8px;
+	background-color: red;
+}
+
+
+
 

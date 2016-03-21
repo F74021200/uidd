@@ -15,15 +15,17 @@
 </div>
 <div class = "yellow_block"></div>
 <div class = "orange_block" id="demo_1">關於南興</div>
-<div class = "yellow_block"></div>
+<div class = "yellow_block" style="position:absolute;top:218px;left:8px;"></div>
 <img class = "home_image" src="received_862657087213478.jpeg">
-<div class = "orange_block" id="demo_2">市場導覽</div>
-<div class = "yellow_block"></div>
-<div class = "orange_block" id="demo_3">地圖資訊</div>
-<div class = "yellow_block"></div>
-<div class = "orange_block" id="demo_4">近期活動</div>
-<div class = "last_yellow_block"></div>
-
+<div class = "orange_block" id="demo_2" style="position:absolute;top:318px;left:8px;">市場導覽</div>
+<div class = "yellow_block" style="position:absolute;top:358px;left:8px;"></div>
+<div class = "orange_block" id="demo_3" style="position:absolute;top:458px;left:8px;">地圖資訊</div>
+<div class = "yellow_block" style="position:absolute;top:498px;left:8px;"></div>
+<div class = "orange_block" id="demo_4" style="position:absolute;top:598px;left:8px;">近期活動</div>
+<div class = "last_yellow_block" style="position:absolute;top:638px;left:8px;"></div>
+<div class = "status"><a></a></div>
+<div class = "status" style="position:absolute;top:718px;left:560;"><a href = #></a></div>
+<div class = "status" style="position:absolute;top:718px;left:640;"><a href = #></a></div>
 
 
 <script>
@@ -38,39 +40,168 @@ document.getElementById("demo_4").onmouseover = function() {mouseOver_4()};
 document.getElementById("demo_4").onmouseout = function() {mouseOut_4()};
 
 function mouseOver_1() {
-	$("#demo_1").animate({borderSpacing:"5px"});
+	var x = 0;
+	var demo = document.getElementById("demo_1");
+	var wpos = 200;
+	var hpos = 40;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 220 && hpos == 45){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 220)wpos = 220;else wpos++;
+			if(hpos == 45)hpos = 45;else hpos++;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "blue";
 }
 
 function mouseOut_1() {
-	$("#demo_1").animate({width:"200px"});
-	$("#demo_1").animate({height:"40px"});
+	var x = 0;
+	var demo = document.getElementById("demo_1");
+	var wpos = 220;
+	var hpos = 45;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 200 && hpos == 40){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 200)wpos = 200;else wpos--;
+			if(hpos == 40)hpos = 40;else hpos--;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "white";
 }
 function mouseOver_2() {
-	$("#demo_2").animate({width:"215px"});
-	$("#demo_2").animate({height:"45px"});
+	var x = 0;
+	var demo = document.getElementById("demo_2");
+	var wpos = 200;
+	var hpos = 40;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 220 && hpos == 45){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 220)wpos = 220;else wpos++;
+			if(hpos == 45)hpos = 45;else hpos++;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "blue";
 }
 
 function mouseOut_2() {
-	$("#demo_2").animate({width:"200px"});
-	$("#demo_2").animate({height:"40px"});
+	var x = 0;
+	var demo = document.getElementById("demo_2");
+	var wpos = 220;
+	var hpos = 45;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 200 && hpos == 40){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 200)wpos = 200;else wpos--;
+			if(hpos == 40)hpos = 40;else hpos--;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "white";
 }
 function mouseOver_3() {
-	$("#demo_3").animate({width:"215px"});
-	$("#demo_3").animate({height:"45px"});
+	var x = 0;
+	var demo = document.getElementById("demo_3");
+	var wpos = 200;
+	var hpos = 40;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 220 && hpos == 45){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 220)wpos = 220;else wpos++;
+			if(hpos == 45)hpos = 45;else hpos++;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "blue";
 }
 
 function mouseOut_3() {
-	$("#demo_3").animate({width:"200px"});
-	$("#demo_3").animate({height:"40px"});
+	var x = 0;
+	var demo = document.getElementById("demo_3");
+	var wpos = 220;
+	var hpos = 45;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 200 && hpos == 40){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 200)wpos = 200;else wpos--;
+			if(hpos == 40)hpos = 40;else hpos--;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "white";
 }
 function mouseOver_4() {
-	$("#demo_4").animate({width:"215px"});
-	$("#demo_4").animate({height:"45px"});
+	var x = 0;
+	var demo = document.getElementById("demo_4");
+	var wpos = 200;
+	var hpos = 40;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 220 && hpos == 45){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 220)wpos = 220;else wpos++;
+			if(hpos == 45)hpos = 45;else hpos++;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "blue";
 }
 
 function mouseOut_4() {
-	$("demo_4").animate({width:"200px"});
-	$("demo_4").animate({height:"40px"});
+	var x = 0;
+	var demo = document.getElementById("demo_4");
+	var wpos = 220;
+	var hpos = 45;
+	var id = setInterval(frame, 5);
+	function frame (){
+		if (wpos == 200 && hpos == 40){
+			clearInterval(id);
+		}
+		else {
+			if(wpos == 200)wpos = 200;else wpos--;
+			if(hpos == 40)hpos = 40;else hpos--;
+			demo.style.width = wpos + 'px';
+			demo.style.height = hpos + 'px';
+
+		}
+	}
+	demo.style.color = "white";
 }
 
 </script>
