@@ -24,8 +24,8 @@
 <div class = "orange_block" id="demo_4" style="position:absolute;top:598px;left:8px;">近期活動</div>
 <div class = "last_yellow_block" style="position:absolute;top:638px;left:8px;"></div>
 <div class = "status"><a></a></div>
-<div class = "status" style="position:absolute;top:718px;left:560;"><a href = #></a></div>
-<div class = "status" style="position:absolute;top:718px;left:640;"><a href = #></a></div>
+<a href = "#" class = "status" style="position:absolute;top:718px;left:560;"></a>
+<div class = "status" style="position:absolute;top:718px;left:640;"><a href = "#"></a></div>
 
 
 <script>

@@ -74,13 +74,18 @@
 	top:718px;
 	left:600px;
 }
-.status.a:hover {
+
+.status a{
 	cursor:pointer;
 	width:8px;
 	height:8px;
-	background-color: red;
+	border-radius:100%;
+	position:absolute;
 }
 
+.status a:hover {
+	background-color:red;
+}
 
 
 
